@@ -2,7 +2,7 @@
 
 /* Header sizes */
 h1 {
-    color: #EDD2E0;
+    color: #ecccdd;
     font-size: 60px;
 }
 h2 {
@@ -18,7 +18,12 @@ h3,h4 {
     margin-top: 40px;
 }
 
+h4 {
+    font-weight: bold;
+}
 
-p,li {
+
+p,li,h4 {
     font-size: 20px;
+    color:#f3e3f3;
 }
