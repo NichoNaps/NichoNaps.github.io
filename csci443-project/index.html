@@ -262,7 +262,68 @@
 
 
 
-    <!-- <h2>Stage 2: </h2> -->
+    <h2>Stage 2: Define</h2>
+
+    <h3>Persona</h3>
+    <p>
+      The persona represents someone with at least 3 subscriptions. This is because people in the interviews were very
+      conscious of money wasted by unused subscriptions and the more subscriptions likely the more they have to
+      occasionally cancel.
+    </p>
+
+    <p>
+      For the age, younger people might have more subscriptions necessitating more unsubscribing when they aren't in use
+      but older people seems to be more open to using external tools for assistance so I decided to pick 40 years old.
+      This is because while I didn't interview a 40 year old it is in the middle between the young and older
+      interviewees to hopefully strike a balance between people with more subscriptions and those that would be more
+      open to using a website for assistance.
+    </p>
+
+    <p>
+      For the rest of the fields about story and attitudes I filled them in based on similar experiences and attitudes
+      found in the empathy maps and interviews. In particular, in the story section I included a bad experience with a subscription 
+      just like how most interviewees had one really bad experience with subscriptions.
+    </p>
+
+    <img src="stage2/persona-page1.svg" class="mb-3" style="width:100%; max-width: 800px;">
+    <img src="stage2/persona-page2.svg" class="mb-3" style="width:100%; max-width: 800px;">
+    TODO: 1 persona with whys for each field
+    <h3>Business Model Canvas</h3>
+    TODO: business model
+    <h3>Conclusion</h3>
+    TODO
 </body>
 
+<script>
+
+  document.querySelectorAll("img").forEach((elem) => {
+    elem.addEventListener('click', () => {
+
+      // note: align-items: center causes the image to clip oddly
+
+      // create fullscreen view
+      let center = document.createElement('div');
+      center.classList.add('fade-in');
+      // center and fill page
+      center.style.cssText = 'position:fixed; left:0px; top:0px; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline; background-color: rgba(0,0,0,0.8); overflow:hidden;' 
+
+      let scroll = document.createElement('div');
+      // center with scroll
+      scroll.style.cssText = 'overflow: auto; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline;' 
+
+      let img = elem.cloneNode(true);
+      // enlarge image
+      img.style.cssText = 'width: 80%; height: auto; min-width: 900px;'; 
+
+      scroll.appendChild(img);
+      center.appendChild(scroll);
+      document.body.appendChild(center);
+
+      center.addEventListener('click', () => {
+        center.remove();
+      });
+
+    })
+  })
+</script>
 </html>

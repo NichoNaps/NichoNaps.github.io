@@ -1,5 +1,12 @@
 /* I'm thinking darkmode pastel? */
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* Header sizes */
 h1 {
     color: #ecccdd;
@@ -26,4 +33,20 @@ h4 {
 p,li,h4 {
     font-size: 20px;
     color:#f3e3f3;
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 200ms ease-in forwards; 
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
