@@ -15,7 +15,7 @@
 </head>
 
 
-<body class=" ms-2 me-2">
+<body>
 
   <!-- BSGrid docs https://getbootstrap.com/docs/5.3/layout/grid/ -->
   <div class="container-md">
@@ -25,7 +25,7 @@
     <p>Emery C</p>
     <br>
 
-    <h2>Stage 1: Empathy</h2>
+    <h2 id="stage-1">Stage 1: Empathy</h2>
 
     <h3>Problem Statement</h3>
     <p>
@@ -265,11 +265,12 @@
     <br>
     <br>
     <br>
-    <h2>Stage 2: Define</h2>
+    <h2 id="stage-2">Stage 2: Define</h2>
 
     <h3>Persona</h3>
     <p>
-      The persona represents someone with at least 3 subscriptions. This is because people in the interviews were very
+      For the persona, I decided it represents someone with at least 3 subscriptions. This is because people in the
+      interviews were very
       conscious of money wasted by unused subscriptions and the more subscriptions likely the more they have to
       occasionally cancel.
     </p>
@@ -284,23 +285,56 @@
 
     <p>
       For the rest of the fields about story and attitudes I filled them in based on similar experiences and attitudes
-      found in the empathy maps and interviews. In particular, in the story section I included a bad experience with a subscription 
+      found in the empathy maps and interviews. In particular, in the story section I included a bad experience with a
+      subscription
       just like how most interviewees had one really bad experience with subscriptions.
     </p>
 
+    <p>
+      Page 1:
+    </p>
     <img src="stage2/persona-page1.svg" class="my-img">
+    <p>
+      Page 2:
+    </p>
     <img src="stage2/persona-page2.svg" class="my-img">
+
     <h3>Business Model Canvas</h3>
+    <p>
+      For the business model I extrapolated sources of costs a website like this would need to pay such as webhosting
+      and keeping the information up to date as subscriptions change. I also brainstormed some potential revenue streams
+      such as advertisements made on the website and a generous free tier for the number subscriptions you can
+      unsubscribe from
+      using the extension followed by a pay as you go model. I think this strikes a good freemium model that will work
+      well with
+      the likely money conscious users making use of this website and extension.
+    </p>
     <img src="stage2/business-plan.svg" class="my-img">
 
     <br>
-    TODO: business model
     <h3>Conclusion</h3>
-    TODO
+    <p>
+      In summary, the app will target the persona of a consumers with 3 or more subscriptions, who are money conscious
+      enough to want to unsubscribe
+      from subscriptions not in use and or who want to be alerted to gotchas in EULAs. This website aims to help these
+      people by reducing
+      the time and frustration associated with these two types of tasks. For some people it may even mean saving some
+      money if they weren't going to
+      cancel a subscription without assistance.
+    </p>
+    <p>
+      The business plan for making this financial viable is a freemium model. Its important that we provide generous free
+      with ads material so we won't turn away our target user
+      because they are money conscious.
+    </p>
+
+
+
 </body>
 
 <script>
 
+  // Allow click to maximize on all images
   document.querySelectorAll("img").forEach((elem) => {
     elem.addEventListener('click', () => {
 
@@ -310,20 +344,23 @@
       let center = document.createElement('div');
       center.classList.add('fade-in');
       // center and fill page
-      center.style.cssText = 'position:fixed; left:0px; top:0px; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline; background-color: rgba(0,0,0,0.8); overflow:hidden;' 
+      center.style.cssText = 'position:fixed; left:0px; top:0px; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline; background-color: rgba(0,0,0,0.8); overflow:hidden;'
 
       let scroll = document.createElement('div');
       // center with scroll
-      scroll.style.cssText = 'overflow: auto; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline;' 
+      scroll.style.cssText = 'overflow: auto; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline;'
 
       let img = elem.cloneNode(true);
+
       // enlarge image
-      img.style.cssText = 'width: 80%; height: auto; min-width: 900px;'; 
+      img.style.cssText = `min-width: ${window.innerWidth}px; min-height: ${window.innerWidth / img.width * img.height}px;`;
+
 
       scroll.appendChild(img);
       center.appendChild(scroll);
       document.body.appendChild(center);
 
+      // dismiss enlarged image
       center.addEventListener('click', () => {
         center.remove();
       });
@@ -331,4 +368,5 @@
     })
   })
 </script>
+
 </html>
