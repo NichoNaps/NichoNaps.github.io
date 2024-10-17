@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CSCI 443 Project</title>
+  <title>Unsubscribe Website - CSCI 443 Project</title>
 
   <!-- Bootstrap imports -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,7 +21,7 @@
   <div class="container-md">
 
     <br>
-    <h1>The Un-Subscribe Website</h1>
+    <h1>The Unsubscribe Website</h1>
     <p>Emery C</p>
     <br>
 
@@ -102,8 +102,8 @@
     <h3>Empathy Maps</h3>
     <br>
     <div class="row">
-      <div class="col mb-3">
-        <img src="empathy-maps/george.svg">
+      <div class="col-xl-6 mb-3">
+        <img src="empathy-maps/george.svg"  class="my-img">
         <ul>
           <li>
             Pains
@@ -121,8 +121,8 @@
           </li>
         </ul>
       </div>
-      <div class="col mb-3">
-        <img src="empathy-maps/caden.svg">
+      <div class="col-xl-6 mb-3">
+        <img src="empathy-maps/caden.svg"  class="my-img">
         <ul>
           <li>
             Pains
@@ -142,8 +142,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col mb-3">
-        <img src="empathy-maps/emmet.svg">
+      <div class="col-xl-6 mb-3">
+        <img src="empathy-maps/emmet.svg"  class="my-img">
         <ul>
           <li>
             Pains
@@ -161,8 +161,8 @@
           </li>
         </ul>
       </div>
-      <div class="col mb-3">
-        <img src="empathy-maps/valerie.svg">
+      <div class="col-xl-6 mb-3">
+        <img src="empathy-maps/valerie.svg"  class="my-img">
         <ul>
           <li>
             Pains
@@ -182,8 +182,12 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+        <img src="empathy-maps/elsie.svg"  class="my-img">
+      </div>
+    </div>
 
-    <img src="empathy-maps/elsie.svg">
     <ul>
       <li>
         Pains
@@ -290,14 +294,21 @@
       just like how most interviewees had one really bad experience with subscriptions.
     </p>
 
-    <p>
-      Page 1:
-    </p>
-    <img src="stage2/persona-page1.svg" class="my-img">
-    <p>
-      Page 2:
-    </p>
-    <img src="stage2/persona-page2.svg" class="my-img">
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+        <p>
+          Page 1:
+        </p>
+        <img src="stage2/persona-page1.svg" class="my-img">
+      </div>
+      <div class="col-xl-6 mb-3">
+        <p>
+          Page 2:
+        </p>
+        <img src="stage2/persona-page2.svg" class="my-img">
+      </div>
+    </div>
+
 
     <h3>Business Model Canvas</h3>
     <p>
@@ -323,9 +334,62 @@
       cancel a subscription without assistance.
     </p>
     <p>
-      The business plan for making this financial viable is a freemium model. Its important that we provide generous free
-      with ads material so we won't turn away our target user
-      because they are money conscious.
+      The business plan for making this financial viable is a freemium model. Its important that we provide generous
+      free with ads material so we won't turn away our target user because they are money conscious.
+    </p>
+
+
+
+    <br>
+    <br>
+    <br>
+    <h2 id="stage-3">Stage 3: Ideate</h2>
+    <h3>Mind Map</h3>
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+    <p>
+      For ideation I elected to use a mind map. This is because I have used mind maps in the past to great success for
+      arranging my thoughts on complex topics while studying. I have however not used them specifically for
+      brainstorming ideas so I though it would be interesting to try mind mapping out in this new setting.
+    </p>
+    <p>
+      Like with mind maps I've previously created, I built them within Obsidian. This let me color connections like a
+      green arrow between canceling subscriptions and money indicating that canceling subscriptions saves you money. I
+      used red however to indicate a more bad relationship like how frustration is red and so is all connections into
+      it. It also let me insert images, including some stock images from pixabay. I used these images to add emphasis
+      like representing EULAs with an image of a large stack of paper or frustration with a frustrated looking person.
+      After starting with the unsubscribe website, and then the two main uses cases of the unsubscribe assistant and
+      EULA gotchas I began to come up with a few new ideas for connections. One of these was why limit the browser
+      extension to just housing the unsubscribe assistant when it could also provide access to EULA gotchas information.
+    </p>
+
+      </div>
+      <div class="col-xl-6 mb-3">
+        <img src="stage3/mindmap.png" class="my-img">
+      </div>
+    </div>  
+
+
+    <h3>Conclusion</h3>
+    <p>
+      I came into ideation a bit skeptical as to whether I would come up with anything novel but the exercise did help me 
+      come up with a few additional ideas below:
+    </p>
+    <p>
+      Firstly, I realized that the browser extension could, in addition to housing the unsubscribe assistant tool, show
+      you EULA gotchas when you go to a page to sign up for
+      a subscription. This way you don't even have to leave the subscription's signup page to be presented with any noteworthy
+      information about the service's EULA. I think it would still be worthwhile to make the EULA gotcha
+      summaries available on the unsubscribe website itself but this opens up another convenient use case of having the extensions installed.
+    </p>
+    <p>
+      Another thing I realized is really important is user feedback. The reason for this is because while we can try to
+      keep information updated as best we can, any one of the subscriptions we have information on could change that
+      information at any moment so we will always be fighting an uphill battle to stay accurate. Thus, its important
+      that users are able to flag something as suspect so we can respond to it more rapidly. Take Amazon for example. If 
+      one day they change their unsubscribe page breaking the unsubscribe assistant without us knowing then users need an
+      easy to report that their is a problem. This also goes for the EULA gotchas which will change as companies change their 
+      EULAs.
     </p>
 
 
@@ -344,20 +408,17 @@
       let center = document.createElement('div');
       center.classList.add('fade-in');
       // center and fill page
-      center.style.cssText = 'position:fixed; left:0px; top:0px; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline; background-color: rgba(0,0,0,0.8); overflow:hidden;'
-
-      let scroll = document.createElement('div');
-      // center with scroll
-      scroll.style.cssText = 'overflow: auto; height:100%; width:100%; display:flex; justify-content:center; align-items:baseline;'
+      center.style.cssText = 'position:fixed; left:0px; top:0px; height:100%; width:100%; background-color: rgba(0,0,0,0.8); overflow:auto;'
 
       let img = elem.cloneNode(true);
 
       // enlarge image
-      img.style.cssText = `min-width: ${window.innerWidth}px; min-height: ${window.innerWidth / img.width * img.height}px;`;
+      // ideally this would scale using the max of the image width/height, this only looks at width
+      let scaleAmount = Math.max(window.innerWidth, img.width); // either render at images real width (to account for bigger images) or stretch small images to fullscreen
+      img.style.cssText = `min-width: ${scaleAmount}px; min-height: ${scaleAmount / img.width * img.height}px; object-fit: contain; object-position: 0px 0px;`;
 
 
-      scroll.appendChild(img);
-      center.appendChild(scroll);
+      center.appendChild(img);
       document.body.appendChild(center);
 
       // dismiss enlarged image
