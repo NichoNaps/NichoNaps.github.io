@@ -43,7 +43,7 @@ h4 {
 
 /* regular text */
 p,li,h4 {
-    font-size: 20px;
+    font-size: 19px;
     color:#f3e3f3;
 }
 
@@ -57,7 +57,7 @@ p,li,h4 {
 #main img:hover {
   outline: 4px solid #EDBBB4;
   scale: 1.01;
-  transition: all 150ms ease-out;
+  transition: all 100ms ease-out;
 }
 
 

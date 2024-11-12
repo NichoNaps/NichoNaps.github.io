@@ -19,6 +19,11 @@
 
   <!-- BSGrid docs https://getbootstrap.com/docs/5.3/layout/grid/ -->
   <div id="main" class="container-md">
+    <div class="row">
+    <div class="col-xl-1">
+    </div>
+    <div class="col-xl-10">
+
 
     <br>
     <h1>The Unsubscribe Website</h1>
@@ -408,7 +413,122 @@
     </p>
 
 
+    <h2 id="stage-4">Stage 4: Prototype</h2>
 
+    <br>
+    <!-- <p>
+      I will preface, that the Unsubscribe website is mean to be very simple tool to to help with unsubscribing and being informed about EULA gotchas. This means 
+      that it doesn't have that many pages and the pages it does have need to be simple to best aid potentially frustrated users that are trying to unsubscribe. Adding more 
+      unnecessary pages would serve only to needlessly complicate what is supposed to be a small helpful tool. 
+    </p> -->
+
+    <h3>Low-Fidelity Prototype</h3>
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+
+        <p>
+          The low fidelity prototypes are all about getting out ideas and seeing them take some form to explore them. 
+
+          </p>
+          <p>
+          For the extension, I sketched out several pages because contains the most functionality. During this time I came up with some potential settings for it to allow users to tune its behavior to their liking.
+          I also came up with the idea of showing the user the list of subscriptions
+      provided by the current website they are on as another way to search subscriptions.
+        </p>
+
+        <p>
+          The website, is considerably simpler needing only to present EULA gotcha information and have a button to open the extension and start unsubscribing. 
+          This means it has a larger version of the subscription view and search pages found in the extension.
+
+        </p>
+
+      </div>
+      <div class="col-xl-6 mb-3">
+        <img src="stage4/low-fidelity.png" class="my-img">
+      </div>
+    </div>
+    
+    <h3>High-Fidelity Prototype</h3>
+
+    <p>
+      For creating the high fidelity prototype I opted to use Figma because I had heard it was good and found it quite intuitive. I worked to turn all of my low fidelity sketches into interactable pages to get more of a feel for how the 
+      extension and website are used.
+        
+      You can check out my high fidelity prototype on Figma below. 
+    </p>
+    
+    <p>
+      There are two main entry points to the prototype:
+    </p>
+    <ul>
+      <li><a href="https://www.figma.com/proto/4uFmT7quSmFAXhwhCs7ORn/csci443?node-id=1-3&node-type=canvas&t=pHQ5Of9pPDP0c5KP-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3">The Unsubscribe Website</a></li>
+      <li><a href="https://www.figma.com/proto/4uFmT7quSmFAXhwhCs7ORn/csci443?node-id=18-9395&node-type=frame&t=xHUKJaHaw1HolPii-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3">The Extension</a></li>
+    </ul>
+
+    <h4>Nielsen Useability Heuristics</h4>
+    <br>
+
+    <h5>1. Visibility of System Status</h5>
+    <p>In order to keep the user informed about what is going on I added a power button to the top right of the extension that you can click to disable the extension. It will then indicate that the extension is actively scanning the websites you visit. </p>
+
+    <h5>2. Match between system and real world</h5>
+    <p>We make use of many icons that have real world counterparts to make the app more readable. These include a Setting Cog icon which is a gear, a search icon that looks like a magnifying glass, and a flag icon for making reports. By using icons with real world counterparts the app will be more understandable to the average user.</p>
+
+    <h5>3. User Control and Freedom</h5>
+    <p>To make users feel more in control whenever there is a sub menu of some kind we allow the user to go back using a back. The submit a report dialogue also has a cancel button. Lastly, the subscribe tool has a big red exit button so you can freely disable it at any moment.</p>
+
+    <h5>4. Consistency and Standards</h5>
+    <p>Users expect this app to work similarly to other apps so to meet user expectations we use the standard Martial Design tool kit which is used to build many apps. Additionally, for the website we have themed it after social media profiles to show the subscriptions  but with our unsubscribe button isntead of a follow/un-follow button. This allows users to draw on what they are familiar with to make this app easier to use. </p>
+
+    <h5>5. Error Prevention</h5>
+    <p>If the user tries to submit an empty feedback form we can alert them that it must contain something. </p>
+
+    <h5>6. Recognition Rather than Recall</h5>
+    <p>To help remind the user of things we will provide recent searches that you searched for as well as frequently accessed websites to look for subscriptions of. Having these shown will reduce the cognitive load needed to use this tool.</p>
+
+    <h5>7. Flexibility and Efficiency of Use</h5>
+    <p>In order to support more ways of using this application the EULA gotchas are viewable both within the extension and on the website. This allows users on mobile or that don't want to install a browser extension to still get some use out of this app.</p>
+
+    <h5>8. Aesthetic and Minimalist Design</h5>
+    <p>I designed the pages to provide only what the user might need so they aren't cluttered. The website viewing a subscription provides all the necessary information about the subscription without anything excess. Additionally, it uses a nice logo for the subscription to be more aesthetic. </p>
+
+    <h5>9. Help users recognize, diagnose, and Recover from Errors</h5>
+    <p>To help users resolve errors we tell users that no subscription could be found if they search for something that doesn't exist to they know to try searching for something else.</p>
+
+    <h5>10. Help and Documentation</h5>
+    <p>Users may seek help documentation to better understand how to use this extension and website. To facilitate this, there is a help/FAQ button in the extension and website.</p>
+
+
+    <h4>UX Design Laws</h4>
+
+    <h5>Fitts Law</h5>
+    <p>
+      As we found out in interviews, we expect some of the users to be sufficiently motivated to unsubscribe even if it
+      takes them a while. To provide the most benefit to these users the speed of unsubscribing must be very fast. For this,
+      I chose to use Fitts Law throughout the design to make the time to click through menus faster. This was done by having
+      the unsubscribe button as well as any other likely to be used buttons kept very large and easy to click.
+    </p>
+    
+    <h5>Cognitive Load</h5>
+    <p>
+      As was also stated, we expect users to value their time and to potentially be frustrated. For the reason I want this
+      app to very simple to use in order to allow these users to relax and unsubscribe with ease. For this reason I kept the
+      the number of pages small and every page has a clear purpose and way of navigating so it takes as little cognitive
+      load as possible.
+    </p>
+    
+    <h5>Von Restorff Effect</h5>
+    <p>
+      Over on the EULA gotcha side of this application I elected to use the Von Restorff Effect to distinguish EULA
+      gotchas. Basically, gotchas of varying severity are color coded to help users at a glance tell what kind of gotchas a
+      subscriptions EULA has.
+    </p>
+
+
+
+  </div>
+  <div class="col-xl-1"></div>
+  </div>
 </body>
 
 <script>
@@ -443,6 +563,53 @@
 
     })
   })
+
+
+  // function getCenter(element) {
+  //   const rect = element.getBoundingClientRect();
+    
+  //   return { x: rect.left + window.scrollX + rect.width / 2, y: rect.top + window.scrollY + rect.height / 2 };
+  // }
+
+  // let lineElement = undefined;
+  // function setLineElement(point1, point2) {
+  //   let x_delta = point2.x - point1.x;
+  //   let y_delta = point2.y - point1.y;
+  //   let length = Math.sqrt(x_delta ** 2 + y_delta ** 2);
+  //   let angle = Math.atan2(y_delta, x_delta) * (180 / Math.PI);
+
+  //   // intilizize the line element if needed
+  //   if (lineElement == undefined) {
+  //     lineElement = document.createElement('div');
+  //     lineElement.style.position = 'absolute';
+  //     lineElement.style.height = '4px';  // thickness of line
+  //     lineElement.style.backgroundColor = 'powderblue';  // line color
+
+  //     lineElement.style.transformOrigin = '0px 0px';  // Rotate around the starting point
+
+  //     // actually add element to page body
+  //     document.body.appendChild(lineElement);
+  //   }
+
+  //   // set line element position and rotation
+  //   lineElement.style.left = `${point1.x}px`;
+  //   lineElement.style.top = `${point1.y}px`;
+  //   lineElement.style.width = `${length}px`;
+  //   lineElement.style.transform = `rotate(${angle}deg)`;
+    
+  // }
+
+  // document.addEventListener('mousemove', (event) => {
+  //   let mousePoint = {x: event.pageX, y: event.pageY};
+
+  //   let element = document.querySelector('#stage-4');
+  //   let elementPos = getCenter(element);
+
+  //   // console.log(mousePoint, elementPos)
+
+  //   setLineElement(mousePoint, elementPos)
+  // });
+
 </script>
 
 </html>
