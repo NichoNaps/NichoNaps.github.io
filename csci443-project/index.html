@@ -11,6 +11,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <link rel="stylesheet" href="/common/main.css">
+  <script src="/common/imageZoom.js"></script>
 
 </head>
 
@@ -634,85 +635,6 @@
   </div>
 </body>
 
-<script>
 
-  // Allow click to maximize on all images
-  document.querySelectorAll("img").forEach((elem) => {
-    elem.addEventListener('click', () => {
-
-      // note: align-items: center causes the image to clip oddly
-
-      // create fullscreen view
-      let center = document.createElement('div');
-      center.classList.add('fade-in');
-      // center and fill page
-      center.style.cssText = 'position:fixed; left:0px; top:0px; height:100%; width:100%; background-color: rgba(0,0,0,0.8); overflow:auto;'
-
-      let img = elem.cloneNode(true);
-
-      // enlarge image
-      // ideally this would scale using the max of the image width/height, this only looks at width
-      let scaleAmount = Math.max(window.innerWidth, img.width); // either render at images real width (to account for bigger images) or stretch small images to fullscreen
-      img.style.cssText = `border: none; outline: none; border-radius: none; min-width: ${scaleAmount}px; min-height: ${scaleAmount / img.width * img.height}px; object-fit: contain; object-position: 0px 0px;`;
-
-
-      center.appendChild(img);
-      document.body.appendChild(center);
-
-      // dismiss enlarged image
-      center.addEventListener('click', () => {
-        center.remove();
-      });
-
-    })
-  })
-
-
-  // function getCenter(element) {
-  //   const rect = element.getBoundingClientRect();
-    
-  //   return { x: rect.left + window.scrollX + rect.width / 2, y: rect.top + window.scrollY + rect.height / 2 };
-  // }
-
-  // let lineElement = undefined;
-  // function setLineElement(point1, point2) {
-  //   let x_delta = point2.x - point1.x;
-  //   let y_delta = point2.y - point1.y;
-  //   let length = Math.sqrt(x_delta ** 2 + y_delta ** 2);
-  //   let angle = Math.atan2(y_delta, x_delta) * (180 / Math.PI);
-
-  //   // intilizize the line element if needed
-  //   if (lineElement == undefined) {
-  //     lineElement = document.createElement('div');
-  //     lineElement.style.position = 'absolute';
-  //     lineElement.style.height = '4px';  // thickness of line
-  //     lineElement.style.backgroundColor = 'powderblue';  // line color
-
-  //     lineElement.style.transformOrigin = '0px 0px';  // Rotate around the starting point
-
-  //     // actually add element to page body
-  //     document.body.appendChild(lineElement);
-  //   }
-
-  //   // set line element position and rotation
-  //   lineElement.style.left = `${point1.x}px`;
-  //   lineElement.style.top = `${point1.y}px`;
-  //   lineElement.style.width = `${length}px`;
-  //   lineElement.style.transform = `rotate(${angle}deg)`;
-    
-  // }
-
-  // document.addEventListener('mousemove', (event) => {
-  //   let mousePoint = {x: event.pageX, y: event.pageY};
-
-  //   let element = document.querySelector('#stage-4');
-  //   let elementPos = getCenter(element);
-
-  //   // console.log(mousePoint, elementPos)
-
-  //   setLineElement(mousePoint, elementPos)
-  // });
-
-</script>
 
 </html>

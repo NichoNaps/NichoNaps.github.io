@@ -79,7 +79,7 @@ header>div {
   box-shadow: 20px 20px 50px -40px rgba(0, 0, 0, 0.6);
   border-radius: 6px;
 
-  max-width: 350px;
+  max-width: 300px;
 }
 
 /* make cards look clicable */
@@ -106,10 +106,7 @@ header>div {
 }
 
 
-
-
-/* This website doesn't have any good anchors where this styling works */
-a {
+.hide-links a {
   color: inherit;
   text-decoration: inherit;
 }
