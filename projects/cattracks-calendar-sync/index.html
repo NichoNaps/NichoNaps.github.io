@@ -23,7 +23,7 @@
 
 <body>
   <header>
-    <div id="main" class="container-md">
+    <nav class="navbar container-md">
       <div>
         <a class="btn" href="/">Emery C</a>
         <a class="btn" href="https://github.com/NichoNaps"><i class="bi bi-github" style="font-size: 20px;"></i></a>
@@ -40,9 +40,8 @@
         <a class="btn" style="color: #e7b3c8; outline: 1px solid #e7b3c8;" href="mailto:emery2call@gmail.com">
           Contact Me
         </a>
-
       </div>
-    </div>
+    </nav>
   </header>
 
   <!-- BSGrid docs https://getbootstrap.com/docs/5.3/layout/grid/ -->
@@ -73,7 +72,8 @@
         </p>
 
         <p>
-          What was left then, was creating a UI/UX for employees to create new syncing urls that they can add to their Outlook.
+          What was left then, was creating a UI/UX for employees to create new syncing urls that they can add to their
+          Outlook.
         </p>
 
         <p>
@@ -86,38 +86,46 @@
 
         <h3>1. Initial Prototype and Research</h3>
         <p>
-          I first layed out what I thought could work as a prototype and started building out the basic functionality. 
+          I first layed out what I thought could work as a prototype and started building out the basic functionality.
         </p>
 
         <p>
-          During this time I would occasionally have an idea of how something could be expanded on to be useful. 
-          Before implementing it though, I would ask one of the affected employees if they thought they would actually use it. One such example 
-          was the idea to allow creating multiple syncing urls with attached filters. This would be useful to employees with many types of appointments that might want to have them 
+          During this time I would occasionally have an idea of how something could be expanded on to be useful.
+          Before implementing it though, I would ask one of the affected employees if they thought they would actually
+          use it. One such example
+          was the idea to allow creating multiple syncing urls with attached filters. This would be useful to employees
+          with many types of appointments that might want to have them
           color coded differently within Outlook which they agreed would be nice to have so I added it.
         </p>
 
         <p>
-          For adding the appointment filters I actually used an identical UI for appointment filtering to another place on the website so users have an easier time using it.
+          For adding the appointment filters I actually used an identical UI for appointment filtering to another place
+          on the website so users have an easier time using it.
         </p>
-        
+
 
         <h3>2. User Testing</h3>
         <p>
-          After getting a minimum viable product working I tried it on an employee to see how well it fared. This was extremely useful because 
+          After getting a minimum viable product working I tried it on an employee to see how well it fared. This was
+          extremely useful because
           it revealed several issues with the feature.
-          
-          <ul>
-            <li>
-              Many AYCSS employees use Macs and the accompanying Mac Outlook App. It turns out the Mac Outlook App is missing the button to add the syncing url so I added into the instructions a warning that the Mac App won't work for adding the url and recommend the use of the web version of Outlook which does have the button.
-            </li>
-            <li>
-              The url generation would always break the first time requiring a page reload to get it working again. This was an easy fix to the backend code. 
-            </li>
-          </ul>
+
+        <ul>
+          <li>
+            Many AYCSS employees use Macs and the accompanying Mac Outlook App. It turns out the Mac Outlook App is
+            missing the button to add the syncing url so I added into the instructions a warning that the Mac App won't
+            work for adding the url and recommend the use of the web version of Outlook which does have the button.
+          </li>
+          <li>
+            The url generation would always break the first time requiring a page reload to get it working again. This
+            was an easy fix to the backend code.
+          </li>
+        </ul>
         </p>
 
         <p>
-          With the above fixes applied and the last pieces of functionality added to the page this new feature was successfully deployed. Provided below are some screenshots of the final page.
+          With the above fixes applied and the last pieces of functionality added to the page this new feature was
+          successfully deployed. Provided below are some screenshots of the final page.
         </p>
 
 
