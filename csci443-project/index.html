@@ -648,12 +648,30 @@
     <h4>Testee Selection</h4>
     <p>
       As stated above, my selection criteria for people hasn't changed from stage 1 so I tried meeting with the same people. 
-      I succeeded in meeting with 3/5 of the original people and met with 2 new people to get to 5. For the last 2 people I
+      I succeeded in meeting with 3/5 of the original people and met with 1 new person to get to 4. For the last person I
       tried to continue following the same reasoning used in stage one that that men had a slight edge in having more
       subscriptions and while younger people may have more subscriptions older people may benefit more from having a tool to
       help with unsubscribing.
     </p>
-    TODO: insert demographics of users graphs etc and maybe reiterate anything about user choice
+
+    <p>Unfortunately I was unable to meet with a 5 person because this was scheduled over a holiday which made meeting with people very difficult.</p>
+
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+        <img src="stage5/image6.png" class="my-img">
+      </div>
+      <div class="col-xl-6 mb-3">
+        <img src="stage5/image7.png" class="my-img">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+        <img src="stage5/image8.png" class="my-img">
+      </div>
+      <div class="col-xl-6 mb-3">
+      </div>
+    </div>
     
 
     <h4>Tasks</h4>
@@ -692,32 +710,83 @@
           <ul>
             <li>Clicks Taken</li>
             <li>Time Taken</li>
-            <li>Success or not</li>
           </ul>
         </li>
         <li>
           <strong>SUS Scores</strong> - As a post-usability testing survey I had participants fill out the ISO standard System Usability Scale (SUS) to get a comprehensive measure of their subjective 
           thoughts on the usability of the app. This provides a more qualitative view of the usability as reported by the users which can be compared to the typical scores of other good apps to see how well this app fares in terms of usability subjectively.
         </li>
-        <li>
-          <strong>Any last thoughts or recommendations?</strong> - This serves as a catch all field for users to leave any extra comments in addition to the SUS score.
-        </li>
       </ul>
     </p>
 
     <h3>Results</h3>
 
-    TODO: stats task metrics, Python, etc
 
-    <h3>SUS Scores - Usability Reported By The Users</h3>
     <p>
-      TODO: interpretation
+      First we have the task completion performance by participants in the form of seconds taken and clicks taken to complete tasks. For these I plotted the averages and standard deviations for the Clicks and Seconds taken per task.
     </p>
-    TODO: make a google form of this or something https://en.wikipedia.org/wiki/System_usability_scale
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+        <img src="stage5/image1.png" class="my-img">
+      </div>
+      <div class="col-xl-6 mb-3">
+        <div class="row">
+          <div class="col-xl-6 mb-3">
+            <img src="stage5/image2.png" class="my-img">
+            <p>Averages per Task</p>
+          </div>
+          <div class="col-xl-6 mb-3">
+            <img src="stage5/image3.png" class="my-img">
+            <p>Standard Deviations per Task</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <p>
+      Then we generate the SUS scores from the google form participants filled out after completing the tasks. I plotted these per participants as well as provide the average and standard deviation of the score.
+    </p>
+    <div class="row">
+      <div class="col-xl-6 mb-3">
+        <img src="stage5/image4.png" class="my-img">
+      </div>
+      <div class="col-xl-6 mb-3">
+        <img src="stage5/image5.png" class="my-img">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <p>
+      You can checkout the full Jupyter Notebook containing 
+      <a href="stage5/plot.ipynb" download="plot.ipynb">this code here.</a>
+    </p>
 
     <h3>Findings and Recommendations</h3>
-    TODO:
+      
+    <p>
+      Starting with task completion performance, participants where able to complete most tasks in close to the minimum number of clicks. They were also very consistent about this with the standard deviation of clicks for tasks 2, 3, and 5 being zero.
+      This seems to indicate that at least the tasks that were picked, users were able to perform well at.
+    </p>
+    <p>
+      However, there was one task that had issues revealed in the data. Task 4 took some people much longer to complete and it took many more clicks. 
+      The reason I think this anomaly happened mostly comes down to the order in which tasks were done. If you followed the instructions then you would be on the subscription view page of the extension which doesn't show a settings cog, the
+      idea being to keep the interface of this submenu within the extension less cluttered. Stage 4 requires that you enter the settings menu so you have to first navigate to the home page from the subscription view page of the extension to reach the settings cog.
+       The problem is that at that point in time, users had never seen the home menu so they would have no way of knowing they needed to do that.
+      
+      If this issue persists with
+      further improved test ordering that first introduce users to the home menu of the extension where the settings cog is visible
+      then it may be worth reworking the subscription view page to incorporate the settings cog.
+
+      In some respect I think task 4 being somewhat harder is ok because this is a more niche feature that you won't need to interact with often.
+    </p>
+
+    <p>
+      Moving onto the SUS scores, the SUS scores provide a subjective report of what the users thought of the usability. The average score found across 100s of studies is 68 so if we can get close to at least 68 that means our app is at least close to the usability of the average app (<a href="https://measuringu.com/sus/">MeasuringU</a>). 
+      In our case our average SUS score was 64.8 which is close but falls a bit short of 68. This means the unsubscribe application is perceived as having a slightly less than average usability by users. For future research it would be good to test that if the tasks are ordered better so task 4 wasn't so difficult if that alone would be enough to boost the 
+      SUS score to reach 68. This shows that there is room for improvment to increase the percieved usability. Afterall, Apple is notorious for making less usable apps where the task performance metrics would be worse but the percieved usability is greater by making heavy use of the aesthetic usability affect. For a lot of software, including the unsubscribe 
+      app that aims to be very easy to use because it users may be already frustrated by trying to unsubscribe the perceived usability is very important.
+    </p>
 
   </div>
   <div class="col-xl-1"></div>
