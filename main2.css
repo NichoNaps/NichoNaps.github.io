@@ -1,0 +1,45 @@
+header {
+  /* padding: 10px; */
+  background-color: #403844;
+}
+
+/* don't left sides of bar hit screen edge */
+.navbar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+.blur-unblur-anim {
+  animation: blur-unblur 1.3s ease-in-out forwards;
+}
+
+@keyframes blur-unblur {
+  0% {
+    backdrop-filter: blur(13px);
+  }
+
+  50% {
+    backdrop-filter: blur(6px);
+  }
+
+  70% {
+    backdrop-filter: blur(9px);
+  }
+
+  100% {
+    backdrop-filter: blur(3px);
+
+  }
+}
+
+
+
+
+
+
+.hide-links a {
+  color: inherit;
+  text-decoration: inherit;
+}
