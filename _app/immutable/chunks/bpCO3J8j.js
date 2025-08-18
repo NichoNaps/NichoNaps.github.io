@@ -1,0 +1,1 @@
+const a=[{url:"scaling-roomate-transactions",tags:[],desc:"Efficiently resolving payments with parallel algorithms in High Performance Computing",title:"From Millions to Manageable",author:"Emery C"}];export{a as p};
