@@ -113,8 +113,7 @@ a, a:link, a:active {
 
 /* Hovered link */
 a:hover {
-  /* color: #b7918c; */
-  filter: brightness(78%);
+  color: #b7918c;
 }
 
 
