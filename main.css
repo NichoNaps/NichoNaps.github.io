@@ -98,3 +98,24 @@ figure {
 
   padding: 0px 5px;
 }
+
+
+
+
+a, a:link, a:active {
+  color: #EDBBB4;
+}
+
+/* Visited link */
+/* a:visited {
+  color: purple;
+} */
+
+/* Hovered link */
+a:hover {
+  /* color: #b7918c; */
+  filter: brightness(78%);
+}
+
+
+
