@@ -48,9 +48,13 @@ h5 {
 
 
 /* regular text */
-p,li {
+p,li,figcaption,td {
     font-size: 18px;
     color:#f3e3f3;
+}
+table td, table th {
+  /* the bs css for tables is ironclad for some reason? */
+  color:#f3e3f3 !important;
 }
 
 
@@ -126,6 +130,10 @@ a:hover {
 }
 
 
+.subtext {
+  color: #9c919c;
+  font-size: 14px;
+}
 
 
 .card-container {
