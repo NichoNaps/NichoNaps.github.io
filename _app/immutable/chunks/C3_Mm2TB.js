@@ -1,1 +1,0 @@
-import{i as t,ai as u,h as a,u as o}from"./BiMIkRpw.js";function c(e){throw new Error("https://svelte.dev/e/lifecycle_outside_component")}function i(e){t===null&&c(),u&&t.l!==null?l(t).m.push(e):a(()=>{const n=o(e);if(typeof n=="function")return n})}function f(e){t===null&&c(),i(()=>()=>o(e))}function l(e){var n=e.l;return n.u??(n.u={a:[],b:[],m:[]})}export{f as a,i as o};
