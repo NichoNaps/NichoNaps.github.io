@@ -14,6 +14,8 @@ TODO: Idea is to use containers and forgejo actions to do a bunch of automations
 1. Compile the new production site to /public
 1. Push prod out to github pages
 
+They are actually working on currently overhauling their version of github pages? https://git-pages.org/
+
 Maybe have a publish branch and main can be the draft branch? maybe serve draft as a local website deployed in a container and nginx?
 
 This explains why docker in docker
