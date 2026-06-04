@@ -48,7 +48,7 @@ h5 {
 
 
 /* regular text */
-p,li,figcaption,td {
+p,li,figcaption,td,.katex-display {
     font-size: 18px;
     color:#f3e3f3;
 }
@@ -99,7 +99,7 @@ figure {
 }
 
 .alert {
-  box-shadow: 10px 13px 33px -3px rgba(0,0,0,0.45);
+  box-shadow: 5px 6px 10px -5px rgba(0,0,0,0.45);
   border-left-width: 5px;
 }
 

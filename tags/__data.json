@@ -1,1 +1,1 @@
-{"type":"data","nodes":[null,{"type":"data","data":[{"tagCounts":1},{"publish":2},2],"uses":{}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"tagCounts":1},{"ci-pipeline":2,"container":2,"forgejo":2},1],"uses":{}}]}

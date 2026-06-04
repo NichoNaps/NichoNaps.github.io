@@ -4,6 +4,9 @@ description: null
 date: 2026-05-13
 tags:
 - publish
+- forgejo
+- ci-pipeline
+- container
 ---
 
 ![Pasted image 20260513170108.png](../../Attachments/Pasted%20image%2020260513170108.png)
