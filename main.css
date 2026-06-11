@@ -145,3 +145,69 @@ a:hover {
      justify-items: center; */
 
 }
+
+
+/* Shiki Transformers Css */
+/* @TODO could we centralize all shiki related bits? */
+pre.shiki {
+  margin-bottom: 0px;
+  
+  /* 
+    remove the themes background color 
+    so we can use the container beneath for color 
+    because it makes having padding with the same color trivial.
+  */
+  background-color: transparent !important;
+}
+.line.diff {
+  &.add {
+    background-color: rgb(55, 73, 66);
+    display: inline-block;
+
+    &::before {
+      content: "+";
+      color: rgb(72, 205, 72);
+    }
+  }
+  &.remove {
+    background-color: rgb(73, 55, 55);
+    display: inline-block;
+
+    opacity: 0.8;
+    &::before {
+      content: "-";
+      color: rgb(202, 94, 94);
+    }
+  }
+}
+.line.highlighted {
+  /* filter: brightness(1.5);  */
+  background-color: rgb(70, 70, 70);
+  display: inline-block;
+}
+
+/* shiki line numbers with css counter() */
+
+/* Reset the counter on the pre/code wrapper */
+pre.shiki {
+  counter-reset: step;
+/* Make space for numbers */
+  /* padding-left: 1rem;  */
+  position: relative;
+}
+
+/* Target each line */
+pre.shiki .line::before {
+  counter-increment: step;
+  content: counter(step);
+  
+  display: inline-block;
+  width: 1.5rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: rgba(137, 131, 138, 0.4); 
+
+  /* Prevent line numbers from being highlighted during user text-selection */
+  user-select: none; 
+}
+
