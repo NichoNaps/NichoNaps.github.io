@@ -9,8 +9,6 @@ tags:
 - container
 ---
 
-![Pasted image 20260513170108.png](../../Attachments/Pasted%20image%2020260513170108.png)
-
 TODO: Idea is to use containers and forgejo actions to do a bunch of automations
 
 1. Take a commit to this blog of markdown files and inject it into the hugos git repo (convert obsidia2026-05-13T16:45:24+00:00n markdown to regular markdown too)
