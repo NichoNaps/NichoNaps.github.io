@@ -29,8 +29,6 @@ automatically sync calendar data into Outlook.
 What was left then, was creating a UI/UX for employees to create new
 syncing urls that they can add to their Outlook.
 
-Tools Used: `VSCode` `Bootstrap`
-
 # Discovery Processes
 
 ## 1. Initial Prototype and Research
