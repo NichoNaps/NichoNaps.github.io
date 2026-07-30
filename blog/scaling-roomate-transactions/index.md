@@ -5,6 +5,7 @@ date: 2025-08-18
 tags:
 - publish
 - algorithms
+- hpc
 ---
 
 Say you have $n = 1000000$ roomates. You all live happily together and occasionally lend money to one another forming a directed graph of at most $e = \binom{n}{2} = 499999500000$ edges of money owed. A year goes by and suddenly, there is a problem (just one). How do you resolve the money owed between these $n$ roommates under the constraints that one roommate can only payout to another if they initially owed that person money and there must be  $<= n - 1$ payments in total to resolve all debt?
