@@ -46,7 +46,9 @@ So unless you plan on never using actions I highly recommend using another backe
 
 ## Writing Workflows
 
-Its a config file that defines events and some bash/shell scripts. You can even reuse scripts from other repos.
+The TLDR of github/forgjo workflows is that its a yaml config file that you write some bash/shell scripts in and specify which events to run the script on. You can even reuse scripts from other repos.
+
+* Honestly as cool as it is to have a working workflow, the developer experience of this is super dated feeling. The feedback loop of have to create test commits and pushing them to see if what you did fixed it isn't great.
 
 You can create one repo with workflows so you can use the same workflow from multiple workflows: https://github.com/orgs/community/discussions/175466#discussioncomment-14564408
 
@@ -55,8 +57,6 @@ https://github.com/actions/checkout#Checkout-multiple-repos-side-by-side
 
 Reference for yaml file format:
 https://forgejo.org/docs/latest/user/actions/reference/
-
-The developer experience of this is pretty bad. The feedback loop of have to create test commits takes forever.
 
 ## Calling Workflow Dispatch API
 

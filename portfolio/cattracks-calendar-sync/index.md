@@ -70,7 +70,7 @@ With the above fixes applied and the last pieces of functionality added
 to the page this new feature was successfully deployed. Provided below
 are some screenshots of the final page.
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 ![](./1.png "Landing Page")

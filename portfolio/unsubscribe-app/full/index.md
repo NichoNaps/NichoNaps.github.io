@@ -45,7 +45,7 @@ As for gender, men typically have a few more subscriptions than woman ([WSJ](htt
 so I've opted to interview 3 men and 2 woman. This way I can interview more people that likely have more
 subscriptions.
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 ![](./assets/demographics-graphs/age.png)
@@ -56,7 +56,9 @@ For the ages, as planned, I interviewed 3 younger people (ages 18-33) as well as
 ::: {.col-xl-6}
 ![](./assets/demographics-graphs/gender.png)
 I also interviewed 3 men and 2 woman as planned.
-\])
+:::
+
+:::
 
 Lastly, I couldn't find any information on how education level correlates to number of subscriptions but I thought
 it was important to collect.
@@ -85,64 +87,59 @@ not read an entire EULA.
 
 ## Empathy Maps
 
-\#bsRow(
-\[
+::: {.row}
+::: {.col-xl-6}
 ![](./assets/empathy-maps/george.svg)
 
-    - Pains
-      - Jumping through hoops to unsubscribe from things.
-      - Raising prices.
-    - Gains
-      - Not wasting money.
-      - Happy to help people navigate bad UIs.
-    
+* Pains
+  * Jumping through hoops to unsubscribe from things.
+  * Raising prices.
+* Gains
+  * Not wasting money.
+  * Happy to help people navigate bad UIs.
+    :::
+    ::: {.col-xl-6}
 
-\],
-\[
 ![](./assets/empathy-maps/caden.svg)
 
-    - Pains
-      - The local newspaper website is very hard to use.
-      - Unsubscribing on websites is hard for him.
-    - Gains
-      - Likes Apple products a lot.
-      - Likes dealing with subscriptions through apple so he can skip
-        using individual websites.
-    
+* Pains
+  * The local newspaper website is very hard to use.
+  * Unsubscribing on websites is hard for him.
+* Gains
+  * Likes Apple products a lot.
+  * Likes dealing with subscriptions through apple so he can skip
+    using individual websites.
+    :::
+    :::
 
-\],
-)
-
-\#bsRow(
-\[
+::: {.row}
+::: {.col-xl-6}
 ![](./assets/empathy-maps/emmet.svg)
 
-    - Pains
-      - Going in person to cancel subscriptions is annoying.
-      - Doesn't like having too many apps.
-    - Gains
-      - Happy to save money by canceling subscriptions.
-      - Enjoys the small things like how the placement of advertisements
-        on websites can be very funny.
-    
+* Pains
+  * Going in person to cancel subscriptions is annoying.
+  * Doesn't like having too many apps.
+* Gains
+  * Happy to save money by canceling subscriptions.
+  * Enjoys the small things like how the placement of advertisements
+    on websites can be very funny.
+    :::
 
-\],
-\[
+::: {.col-xl-6}
+
 ![](./assets/empathy-maps/valerie.svg)
 
-    - Pains
-      - Doesn't like auto-signup subscriptions.
-      - Doesn't like the though of subscriptions taking money even when
-        you don't interact with the service for an extended period of
-        time.
-    - Gains
-      - Likes as few advertisements as possible.
-      - Likes that if you use other peoples subscriptions you don't
-        have to worry about.
-    
-
-\],
-)
+* Pains
+  * Doesn't like auto-signup subscriptions.
+  * Doesn't like the though of subscriptions taking money even when
+    you don't interact with the service for an extended period of
+    time.
+* Gains
+  * Likes as few advertisements as possible.
+  * Likes that if you use other peoples subscriptions you don't
+    have to worry about.
+    :::
+    :::
 
 ![](./assets/empathy-maps/elsie.svg)
 
@@ -230,7 +227,7 @@ interviews. In particular, in the story section I included a bad
 experience with a subscription just like how most interviewees had one
 really bad experience with subscriptions.
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 Page 1:
@@ -242,7 +239,9 @@ Page 1:
 Page 2:
 ![](./assets/stage2/persona-page2.svg)
 
-\])
+:::
+
+:::
 
 ## Business Model Canvas
 
@@ -275,8 +274,7 @@ won't turn away our target user because they are money conscious.
 
 ## Mind Map
 
-::: {.grid}
-
+::: {.row}
 ::: {.col-xl-6}
 
 For ideation I elected to use a mind map. This is because I have used
@@ -304,7 +302,10 @@ could also provide access to EULA gotchas information.
 
 ::: {.col-xl-6}
 ![](./assets/stage3/mindmap.png)
-\])
+
+:::
+
+:::
 
 ## Conclusion
 
@@ -380,10 +381,9 @@ There are three main entry points to the prototype:
 
 #### 1. Visibility of System Status
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
-
 In order to keep the user informed about what is going on when they
 disable the extension, I color coded the power button icon and hid away
 the extension interface when disabled. This will clearly indicate to
@@ -396,12 +396,14 @@ this very obvious to the user by using a dashed green outline.
 
 ::: {.col-xl-6}
 
-::: {.grid}
+::: {.row}
+
 ::: {.col-xl-6}
 ![](./assets/stage4/u12.png)
 Extension Disabled
 :::
 ::: {.col-xl-6}
+
 ![](./assets/stage4/u13.png)
 Unsubscribe Assistant Active
 :::
@@ -413,7 +415,7 @@ Unsubscribe Assistant Active
 
 #### 2. Match between system and real world
 
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
 I make use of many icons that have real world counterparts to make the
 app more readable. These include a Setting Cog icon which is a gear, a
@@ -422,7 +424,7 @@ making reports. By using icons with real world counterparts the app will
 be more understandable to the average user at a glance.
 :::
 ::: {.col-xl-6}
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
 ![](./assets/stage4/u2.png)
 :::
@@ -431,10 +433,11 @@ be more understandable to the average user at a glance.
 :::
 :::
 :::
+:::
 
 #### 3. User Control and Freedom
 
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
 To make users feel more in control whenever there is a sub menu of some
 kind I allow the user to go back using a back button. The submit a
@@ -442,7 +445,7 @@ report dialogue also has a cancel button. Lastly, the subscribe tool has
 a big red exit button so you can freely disable it at any moment.
 :::
 ::: {.col-xl-6}
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
 ![](./assets/stage4/u3.png)
 :::
@@ -455,7 +458,7 @@ a big red exit button so you can freely disable it at any moment.
 
 #### 4. Consistency and Standards
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 
@@ -478,7 +481,7 @@ Social Media Profile Inspired Design
 
 #### 5. Error Prevention
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 If the user tries to submit an empty feedback form we can alert them
@@ -494,7 +497,7 @@ mistakenly forgotten to add the report before submitting.
 
 #### 6. Recognition Rather than Recall
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 To help remind the user of what they have search before or common auto
@@ -504,7 +507,7 @@ will reduce the cognitive load needed to use search within this app.
 :::
 
 ::: {.col-xl-6}
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
 ![](./assets/stage4/u6.png)
 :::
@@ -514,9 +517,11 @@ will reduce the cognitive load needed to use search within this app.
 :::
 :::
 
+:::
+
 #### 7. Flexibility and Efficiency of Use
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 In order to support more ways of using this application the EULA gotchas
@@ -526,19 +531,21 @@ still get some use out of this app.
 :::
 
 ::: {.col-xl-6}
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
+
 ![](./assets/stage4/u4.png)
 
-      EULA gotchas can be found within the website.
+EULA gotchas can be found within the website.
+
     :::
     ::: {.col-xl-6}
-      ![](./assets/stage4/u7.png)
-    
-      EULA gotchas can be found within the extension.
-    :::
     
 
+![](./assets/stage4/u7.png)
+
+EULA gotchas can be found within the extension.
+:::
 :::
 :::
 
@@ -546,7 +553,7 @@ still get some use out of this app.
 
 #### 8. Aesthetic and Minimalist Design
 
-::: {.grid}
+::: {.row}
 ::: {.col-xl-6}
 I designed the pages to provide only what the user might need so they
 are minimalist instead of cluttered. Take for example the page you are
@@ -564,7 +571,7 @@ subscriptions to be more aesthetic.
 
 #### 9. Help users recognize, diagnose, and Recover from Errors
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 To help users resolve errors we tell users that no subscription could be
@@ -581,7 +588,7 @@ just taking a long time for the results to load.
 
 #### 10. Help and Documentation
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 Users may seek help documentation to better understand how to use this
@@ -591,14 +598,20 @@ if needed.
 :::
 
 ::: {.col-xl-6}
-::: {.grid}
+::: {.row}
 
     ::: {.col-xl-6}
-      ![](./assets/stage4/u101.png)
+    
+
+![](./assets/stage4/u101.png)
+
     :::
     ::: {.col-xl-6}
-      ![](./assets/stage4/u10.png)
-      ![](./assets/stage4/u4.png)
+    
+
+![](./assets/stage4/u10.png)
+![](./assets/stage4/u4.png)
+
     :::
     
 
@@ -671,7 +684,7 @@ people may benefit more from having a tool to help with unsubscribing.
 Unfortunately I was unable to meet with a 5 person because this was
 scheduled over a holiday which made meeting with people very difficult.
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 ![](./assets/stage5/image6.png)
@@ -683,7 +696,7 @@ scheduled over a holiday which made meeting with people very difficult.
 
 :::
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 ![](./assets/stage5/image8.png)
@@ -712,13 +725,13 @@ starting to perform the task.
 I wanted to get as much information as possible so I compiled several
 information sources described below:
 
-* *Demographics Survey* - Taken to know background info about users.
+* **Demographics Survey** - Taken to know background info about users.
   Results are shown above.
-* *Task Completion Metrics* - Record User Performing Tasks to
+* **Task Completion Metrics** - Record User Performing Tasks to
   collect the following for each task:
   * Clicks Taken
   * Time Taken
-* *SUS Scores* - As a post-usability testing survey I had
+* **SUS Scores** - As a post-usability testing survey I had
   participants fill out the ISO standard System Usability Scale (SUS)
   to get a comprehensive measure of their subjective thoughts on the
   usability of the app. This provides a more qualitative view of the
@@ -733,28 +746,28 @@ form of seconds taken and clicks taken to complete tasks. For these I
 plotted the averages and standard deviations for the Clicks and Seconds
 taken per task.
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 ![](./assets/stage5/image1.png)
 
 :::
 ::: {.col-xl-6}
-::: {.grid}
+::: {.row}
 
       ::: {.col-xl-6}
-        ![](./assets/stage5/image2.png)
-    
-        Averages per Task
-      :::
-      ::: {.col-xl-6}
-        ![](./assets/stage5/image3.png)
-    
-        Standard Deviations per Task
-      :::
-    :::
     
 
+![](./assets/stage5/image2.png)
+
+Averages per Task
+:::
+::: {.col-xl-6}
+![](./assets/stage5/image3.png)
+
+Standard Deviations per Task
+:::
+:::
 :::
 :::
 
@@ -762,7 +775,7 @@ Then we generate the SUS scores from the google form participants filled
 out after completing the tasks. I plotted these per participants as well
 as provide the average and standard deviation of the score.
 
-::: {.grid}
+::: {.row}
 
 ::: {.col-xl-6}
 ![](./assets/stage5/image4.png)
