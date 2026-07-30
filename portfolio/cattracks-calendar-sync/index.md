@@ -6,7 +6,7 @@ tags:
 - publish
 - php
 - outlook
-- .ics
+- icalendar
 ---
 
 ## The Problem
