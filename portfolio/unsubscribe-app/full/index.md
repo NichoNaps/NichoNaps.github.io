@@ -1,6 +1,6 @@
 ---
-title: The Unsubscribe App
-description: I added Outlook calendar syncing to the MSU CatTracks internal appointment system.
+title: The Unsubscribe App (Full)
+description: A College UX/UI Design Project for website and browser extension that make unsubscribing easier.
 date: 2023-11-6
 tags:
 - publish
