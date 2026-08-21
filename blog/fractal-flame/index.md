@@ -21,7 +21,7 @@ Go ahead and try it out here:
 :::
 
 ::: {.col-xl-6}
-![fractal(11).png](../../Attachments/fractal%2811%29.png)
+![fractal(12).png](../../Attachments/fractal%2812%29.png)
 
 :::
 
