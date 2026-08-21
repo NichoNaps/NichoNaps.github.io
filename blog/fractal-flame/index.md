@@ -1,5 +1,5 @@
 ---
-title: Trying out Fractal Flames Visualizations
+title: Trying out Fractal Flame Visualizations
 description: Math makes pretty colors.
 date: 2025-04-23
 tags:
@@ -14,6 +14,10 @@ tags:
 Greetings,
 
 I made a quick and dirty Fractal Flame implementation in Javascript/Svelte after stumbling across the fractal frame [Wikipedia](https://en.wikipedia.org/wiki/Fractal_flame) and [2008 Paper](https://flam3.com/flame_draves.pdf). I hadn't heard of fractals with gradients so it peaked my interest. It builds of an existing algorithm called chaos game with some randomness, non-linear functions, and color tinting to create colorful fractals.
+
+Go ahead and try it out here:
+[Fractal Flame Visualizer](/tools/fractal-flame/)
+
 :::
 
 ::: {.col-xl-6}
@@ -22,8 +26,6 @@ I made a quick and dirty Fractal Flame implementation in Javascript/Svelte after
 :::
 
 :::
-
-Go ahead and try it out here: [Fractal Flame Visualizer](/tools/fractal-flame/)
 
 The original chaos game/[IFS (Iterated Function System)](https://en.wikipedia.org/wiki/Iterated_function_system) algorithm works by jumping around a 2d plain by repeatedly applying a random affine transform from a specified list of available transforms. This is sufficient to create a black and white image of many fractals by filling in the pixel the algorithm reached after each jump.
 
