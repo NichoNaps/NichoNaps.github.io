@@ -1,68 +1,158 @@
-/* I'm thinking darkmode pastel? */
+
+/* Site Colors */
+/* darkmode pastel */
+:root {
+  --color-primary: #e7b3c8;
+  --color-accent: #EDBBB4;
+
+  --color-bg-main: #232126; 
+  --color-bg-surface: #3f3237; 
+
+  --color-text-main: #edd5ed; 
+  --color-text-code: #e8b0dd; 
+  --color-text-muted: #9c919c;
+}
+
 
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+
+  background-color: var(--color-bg-main);
 }
+
+main {
+  max-width: 750px;  
+  margin: 0 auto; 
+}
+
 
 
 /* Header sizes */
 h1 {
-    color: #e7b3c8;
-    
-    font-size: 50px;
+  color: var(--color-primary);
+  font-size: 50px;
 }
 h2 {
-    color: #e7b3c8;
-    font-size: 30px;
+  color: var(--color-primary);
+  font-size: 30px;
 
-    /* Make h2s a center box */
-    margin-top: 50px;
-    /* border: 1px solid #e7b3c8; */
-    background-color: #3f3237;
-    padding: 20px;
-    text-align: center;
-    border-radius: 6px;
-    box-shadow: 10px 28px 78px -36px rgba(0,0,0,0.9);
+
+  /* Make h2s a center box */
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: var(--color-bg-surface);
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 10px 28px 78px -36px rgba(0,0,0,0.9);
 }
 h3 {
-    color: #EDBBB4;
-    font-size: 23px;
-}
+  color: var(--color-accent);
+  font-size: 25px;
 
-h3,h4 {
-    margin-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 h4 {
-  color: #e8c7c3;
+  color: oklch(from var(--color-accent) calc(l - 0.05) c h);
+  font-size: 20px;
+
+  margin-top: 30px;
+  margin-bottom: 15px;
+
   font-weight: bold;
 }
 
 h5 {
-  color: #e8c7c3;
+  color: oklch(from var(--color-accent) calc(l - 0.09) c h);
+  font-size: 18px;
 
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+  font-weight: bold;
+}
+h6 {
+  color: oklch(from var(--color-accent) calc(l - 0.13) c h);
+  font-size: 15px;
+
+  margin-top: 30px;
+  margin-bottom: 15px;
+  
+  font-weight: bold;
+}
+
+
+a, a:link, a:active {
+  color: var(--color-accent);
+}
+
+/* Visited link */
+/* a:visited {
+  color:  oklch(from var(--color-accent) calc(l - 0.1) c h);
+} */
+
+/* Hovered link */
+a:hover {
+  color: oklch(from var(--color-accent) calc(l + 0.08) c h);
 }
 
 
 /* regular text */
 p,li,figcaption,td,.katex-display {
-    font-size: 18px;
-    color:#f3e3f3;
+  font-size: 18px;
+  color: var(--color-text-main);
 }
-table td, table th {
+table td {
   /* the bs css for tables is ironclad for some reason? */
-  color:#f3e3f3 !important;
+  color: var(--color-text-main) !important;
+}
+table th {
+  color: var(--color-accent) !important;
 }
 
+/* exclude div.codeblock */
+code:not(div.codeblock *) {
+  color: var(--color-text-code);
+  background-color: #161719;
+  padding: 3px 5px 3px 5px;
+  border: 1px solid var(--color-bg-surface);
+
+  border-radius: 5px;
+}
+
+
+p {
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+}
+
+/* Add left line of header */
+/* h3, h4 {
+  border-left: 5px solid var(--color-bg-surface);
+  padding-left: 20px;
+  border-radius: 3px;
+} */
+
+
+hr {
+  height: 5px;
+  background-color: var(--color-bg-surface);
+  border-radius: 3px;
+
+  /* hide weird defaults */
+  color: transparent;
+  opacity: 1;
+}
 
 
 
 figure {
-  
-  /* Thsi fixes figure captions  */
+  /* This fixes figure captions  */
   flex-direction: column;
   width: 100%;
   display: flex;
@@ -77,137 +167,12 @@ figure {
   }
 }
 
-/* td, th {
-    color:#f3e3f3 !important;
-} */
 
 
-
-.fade-in {
-  opacity: 0;
-  animation: fade-in 200ms ease-in-out forwards; 
-}
-
-@keyframes fade-in {
-  from {
-    scale: 0;
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.alert {
-  box-shadow: 5px 6px 10px -5px rgba(0,0,0,0.45);
-  border-left-width: 5px;
-}
-
-.raw-inline > code {
-  border: 1px solid var(--bs-secondary);
-  border-radius: 3px;
-  background-color: rgb(22, 23, 25);
-  box-shadow: 10px 13px 33px -3px rgba(0,0,0,0.45);
-
-  padding: 0px 5px;
+header {
+  background-color: var(--color-bg-surface);
 }
 
 
 
-
-a, a:link, a:active {
-  color: #EDBBB4;
-}
-
-/* Visited link */
-/* a:visited {
-  color: purple;
-} */
-
-/* Hovered link */
-a:hover {
-  color: #b7918c;
-}
-
-
-.subtext {
-  color: #9c919c;
-  font-size: 14px;
-}
-
-
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-
-    /* justify-content: center; 
-     justify-items: center; */
-
-}
-
-
-/* Shiki Transformers Css */
-/* @TODO could we centralize all shiki related bits? */
-pre.shiki {
-  margin-bottom: 0px;
-  
-  /* 
-    remove the themes background color 
-    so we can use the container beneath for color 
-    because it makes having padding with the same color trivial.
-  */
-  background-color: transparent !important;
-}
-.line.diff {
-  &.add {
-    background-color: rgb(55, 73, 66);
-    display: inline-block;
-
-    &::before {
-      content: "+";
-      color: rgb(72, 205, 72);
-    }
-  }
-  &.remove {
-    background-color: rgb(73, 55, 55);
-    display: inline-block;
-
-    opacity: 0.8;
-    &::before {
-      content: "-";
-      color: rgb(202, 94, 94);
-    }
-  }
-}
-.line.highlighted {
-  /* filter: brightness(1.5);  */
-  background-color: rgb(70, 70, 70);
-  display: inline-block;
-}
-
-/* shiki line numbers with css counter() */
-
-/* Reset the counter on the pre/code wrapper */
-pre.shiki {
-  counter-reset: step;
-/* Make space for numbers */
-  /* padding-left: 1rem;  */
-  position: relative;
-}
-
-/* Target each line */
-pre.shiki .line::before {
-  counter-increment: step;
-  content: counter(step);
-  
-  display: inline-block;
-  width: 1.5rem;
-  margin-right: 1rem;
-  text-align: right;
-  color: rgba(137, 131, 138, 0.4); 
-
-  /* Prevent line numbers from being highlighted during user text-selection */
-  user-select: none; 
-}
 

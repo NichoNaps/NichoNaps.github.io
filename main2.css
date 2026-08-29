@@ -1,15 +1,11 @@
-header {
-  /* padding: 10px; */
-  background-color: #403844;
-}
+/* This file is for custom site wide classes instead of overriding css builtins. */
+
 
 /* don't left sides of bar hit screen edge */
 .navbar {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-
 
 .blur-unblur-anim {
   animation: blur-unblur 1.3s ease-in-out forwards;
@@ -34,12 +30,46 @@ header {
   }
 }
 
-
-
-
-
-
 .hide-links a {
   color: inherit;
   text-decoration: inherit;
 }
+
+
+.subtext {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+
+  /* justify-content: center; 
+    justify-items: center; */
+
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 200ms ease-in-out forwards; 
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.alert {
+  box-shadow: 5px 6px 10px -5px rgba(0,0,0,0.45);
+  border-left-width: 5px;
+}
+
