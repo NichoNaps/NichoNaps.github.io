@@ -1,16 +1,19 @@
 ---
-title: I was Almost Bamboozled by Automatic Backups
+title: The Long Way to a Working Backup System
 description: My journey exploring de-duplicating backup tools for Linux.
 date: 2025-09-02
 tags:
 - publish
-- linux
 - backup
+- Linux
+- Homelab
 ---
 
 I hope this article helps anyone having issues with Duplicity that would open to trying out some of its more modern alternatives.
 
-When I first setup my Homelab around a old tower PC running TrueNAS Scale in 2023 I was ecstatic about the all the different things I could use it for. Chief among them being that I could try out this cool backup tool called [Duplicity](https://Duplicity.us/) that I was told about in a Linux IT class. The instructor, a kind bearded fellow, truly every stereotype of a Linux admin boiled into one regaled how this tool could perform incremental backups and upload to even untrusted computers by encrypting the backups sent. To be exact, Duplicity uses the same tech as rsync to first make a full backup of the system followed by incremental backups that reference the previous backups. I thought the idea of sending only the data that changed in a snapshot was really cool for its speed and storage savings. Unfortunately, not having an extra computer at the time to use for backups prevented me from really pursuing it then.
+When I first setup my Homelab around a old tower PC running TrueNAS Scale in 2023 I was ecstatic about the all the different things I could use it for. Chief among them being that I could try out this cool backup tool called [Duplicity](https://Duplicity.us/) that I was told about in a Linux IT class. The instructor, a kind bearded fellow, truly every stereotype of a Linux admin boiled into one regaled how this tool could perform incremental backups and upload to even untrusted computers by encrypting the backups sent.
+
+To be exact, Duplicity uses the same tech as rsync to first make a full backup of the system followed by incremental backups that reference the previous backups. I thought the idea of sending only the data that changed in a snapshot was really cool for its speed and storage savings. Unfortunately, not having an extra computer at the time to use for backups prevented me from really pursuing it then.
 
 ## Digging Myself Into a Hole
 

@@ -6,7 +6,7 @@ tags:
 - publish
 - UI-UX
 - website
-- figma
+- Figma
 ---
 
 ## The Problem

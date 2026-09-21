@@ -5,8 +5,8 @@ date: 2023-11-6
 tags:
 - publish
 - php
-- outlook
 - icalendar
+- Outlook
 ---
 
 ## The Problem
