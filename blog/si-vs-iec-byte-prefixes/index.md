@@ -3,10 +3,10 @@ title: Why Kilobytes Aren't Always 1000 Bytes
 description: Kilobyte, kibibyte, whats the difference and why does File Explorer say your drives are smaller than advertised?
 date: 2026-09-15
 tags:
-- windows
-- units
-- linux
-- macos
+- Windows
+- Units
+- Linux
+- MacOS
 - Grafana
 - publish
 ---
