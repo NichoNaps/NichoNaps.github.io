@@ -6,7 +6,7 @@ tags:
 - publish
 - UI-UX
 - website
-- figma
+- Figma
 ---
 
 # Stage 1: Empathy

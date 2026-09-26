@@ -4,7 +4,7 @@ description: My journey exploring de-duplicating backup tools for Linux.
 date: 2025-09-02
 tags:
 - publish
-- backup
+- Backups
 - Linux
 - Homelab
 ---
