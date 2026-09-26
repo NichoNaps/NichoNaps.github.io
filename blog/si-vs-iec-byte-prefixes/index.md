@@ -1,6 +1,6 @@
 ---
 title: Why Kilobytes Aren't Always 1000 Bytes
-description: Kilobyte, kibibyte, whats the difference and why does file explorer lie to you?
+description: Kilobyte, kibibyte, whats the difference and why does File Explorer tell you your drives are smaller than advertised?
 date: 2026-09-15
 tags:
 - windows
@@ -87,7 +87,8 @@ On Linux there is a wide variety of desktops and associated default file manager
 
 So how did 8 bits get counted so differently? historically and often still today, prefixes for bytes are reported using SI prefixes (multiples of 1000) even though they are computed using multiples of 1024. In 1999 the IEC published a dedicated binary prefix to help correct the misuse of the SI prefix but the old way has stuck around. Thus, even 27 years later you still can't be sure an SI prefix is a multiple of 1000 and consumers are understandably so confused that they sue over it.
 
-Thanks for reading, I guess the lawyers won this one.
+Thanks for reading.
 
 Until next time,
+
 Emery
